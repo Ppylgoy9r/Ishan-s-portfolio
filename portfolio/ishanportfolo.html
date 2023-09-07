@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: rgb(0 0 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  color: white;
+  }
+
+  nav ul li a:hover{
+  color: rgb(153, 153, 223);
+  font-size: 1.02rem;
+  }
+  .left {
+    font-size: 1.5rem;
+
+  }
+.leftsection {
+  font-size: 1.5rem;
+}
+  .firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 65px 0;
+    align-items: center;
+
+  }
+
+main hr{
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 35px 74px;
+}
+
+  .firstsection>div {
+    margin: 1px 0;
+    font-size: 2.5rem;
+  }
+
+
+  .leftsection .div {
+    font-size: 2.5rem;
+    
+  }
+.leftsection .buttons{
+  padding: 50px 0;
+}
+  .leftsection .btn {
+    padding: 9px;
+    background:#1e2167 ;
+    color: white;
+    border:2px solid white ;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+
+    
+  }
+.download .jpeg{
+  width: 18px;
+  top: -29px;
+  left: -10px;
+}
+.board.png{
+  width: 25px;
+    top: -30px;
+    left: -13px;
+}
+  .rightsection img {
+    width: 80%;
+    margin: 30px 0;
+    
+  }
+  .secondsection hr{
+    font-size: 1.9rem;
+  }
+  .purple{
+    color: rgb(126, 53, 194);
+  }
+  .text-grey{
+    color: gray;
+
+  }
+  #element{
+    color: rgb(126, 53, 194);
+    font-size: 2.0rem;
+  }
+  .secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+  }
+  .secondsection .box {
+    background: white;
+    margin: 36px 0;
+    width: 75vw;
+    height: 1.45px;
+    display: flex;
+  }
+ .secondsection .vertical{
+  
+    height: 97px;
+    width: 1px;
+    background: white;
+    margin:0 7.5vw;
+  }
+  .image-top{
+  position: relative;
+  top: -37px;
+  left: -16px;
+  width: 35px;
+  }
+.vertical-tittle{
+  position:relative;
+top:80px;
+width: 150px;
+font-variant: small-caps;
+font-size: 14px;
+
+  }
+.vertical-desc{
+position: relative;
+top: 90px;
+color:gray;
+width:150px ;
+font-size:9px;
+}
+footer{
+  background-color: #0e0e1a;
+  
+}
+.footer{
+  display: flex;
+  padding:23px 122px;
+  justify-content: space-evenly;
+  text-align: center;
+
+}
+.footer ul{
+list-style: none;
+}
+.footer >div{
+  width: 467px;
+    margin-top: auto;
+}
+footer .footer-rights{
+  color: gray;
+  text-align: center;
+  padding: 12px 0;
+  margin-right: auto;
+}
+a{
+  text-decoration: none;
+}
+
+
+@media screen and (max-width : 1200px){
+      nav{
+        flex-direction: column;
+      }
+      .secondsection.box{
+        width: 50vw;
+      }
+      .vertical-tittle,.vertical-desc{
+        left:45px;
+      }
+      .box{
+        flex-direction: column;
+      }
+      .secondsection .vertical{
+        height:unset;
+      }
+      
+      .firstsection{
+        flex-direction: column-reverse;
+      }
+      .leftsection{
+        width: 100%!important;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+      align-items: center;
+      }
+      .rightsection{
+        width: 721px !important;
+        display: flex;
+        justify-content: center;
+      }
+      .rightsection img{
+      width: 45vw;
+      margin-bottom: 75px;
+      }
+      .secondsection{
+      display:flex ;
+      flex-direction:column ;
+      align-items: center;
+      }
+      body{
+        min-width: fit-content;
+      }
+      .image-top{
+        top: 133px;
+      }
+      
+    }
+  
+
+
+</style>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Ishan's Portfolio</div>
+      <div class="right">
+        <ul>
+      <li><a href="ishanportfolio.html">Home</a></li>   
+         <li><a href="about.html">About</a></li>         
+         <li><a href="services.html">Services</a></li>      
+         <li><a href="projects.html">Projects</a></li>          
+         <li><a href="contacts.html">Contact me</a></li>        
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+       <div>Hi, My name is </div> <span class="purple">Ishan</span> 
+        <span><div>and I am a passionate</div></span>
+        <span id="element"></span>
+       <div><a href="Ishan kumar resume.pdf" download><button class="btn">Download resume</button></a>
+       <a href="https://github.com/"><button class="btn">visit Github</button></a></div>
+      </div>
+
+      <div class="rightsection">
+        <img src="n3.png" alt="404" />
+      </div>
+    </section>
+    <hr>
+    <section class="secondsection">
+      <span class="text-gray">what i have done so far in Qualification <span>and</span> </span>
+      <h1>Work experience</h1>
+
+
+
+      <div class="box">
+      <div class="vertical">
+        <img class="image-top" src="devp.png" alt="">
+        <div class="vertical-tittle">
+          <span>Matriculation <div>(2020)</div></span>
+        </div>
+        <div class="vertical-desc">
+          I have done my Schooling from the South Point Public School.This School is located in Patna. In boards Examination i have secured 80%.
+        </div>
+      </div>
+
+
+
+
+      <div class="vertical">
+        <img class="image-top" src="twit.png" alt="">
+        <div class="vertical-tittle">
+         <span>Higher Education <div>(2020-2022)</div></span>
+        </div>
+        <div class="vertical-desc">
+          I have done my Higher education from the Vidya Sanskar School.In  Intermediate Examination I have secured 70% .
+        </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="yt.png" alt="">
+          <div class="vertical-tittle">
+            <span>Post Graduate <div>(2023-2025)</div></span>
+          </div>
+          <div class="vertical-desc">
+            Currently Pursuing Bsc It from Cimage college. This college is good for its placements.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="board.png" alt="" >
+          <div class="vertical-tittle">
+            <span>working as virtual intern<div>(2023)</div></span>
+          </div>
+          <div class="vertical-desc">
+            working in Boardinfinity at the position of the web developer .It is a one Month internship program.
+          </div>
+        </div>
+       
+        <div class="vertical">
+          <img class="image-top" src="download.jpeg" alt="" >
+          <div class="vertical-tittle">
+            <span>working as intern<div>(2023)</div></span>
+          </div>
+          <div class="vertical-desc">
+            working in CodeClause at the position of the web developer .It is a one Month internship program.
+          </div>
+        </div>
+        
+    </section>
+  </main>
+  <footer>
+    <!-- <div class="footer">
+      <div class="footer-first">
+        Ishan's developer Portfolio
+      </div> -->
+ <!-- <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="footer-rights">
+     copyrights &#169; Ishan's portfolio.com || All rights are reserved
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+     strings: ['Web developer', 'Graphic designer','Web designer','Video editor'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
